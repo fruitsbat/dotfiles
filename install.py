@@ -46,7 +46,8 @@ def add_symlink(symlink: Link) -> None:
 
     elif location.exists():
         print(
-            f"there is something at the location {symlink.real_location()}. please check if you still need it and remove it if not."
+            f"there is something at the location {symlink.real_location()}. \
+            please check if you still need it and remove it if not."
         )
 
     else:
