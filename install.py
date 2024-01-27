@@ -7,7 +7,7 @@ from dataclasses import dataclass
 
 
 @dataclass
-class Link:
+class Symlink:
     location: str
     target: str
 
@@ -18,14 +18,14 @@ class Link:
         return os.path.realpath(self.location)
 
 
-def make_symlink(symlink: Link) -> None:
+def make_symlink(symlink: Symlink) -> None:
     print(f"creating symlink from {symlink.real_location()} to {symlink.real_target()} ")
     os.symlink(symlink.real_target(), symlink.real_location())
 
 
 # check if a symlink already points to the right place
 # if not make it point there
-def fixup_symlink(symlink: Link) -> None:
+def fixup_symlink(symlink: Symlink) -> None:
     link_target = os.readlink(symlink.location)
     link_target = os.path.realpath(link_target)
 
@@ -37,7 +37,7 @@ def fixup_symlink(symlink: Link) -> None:
         os.unlink(symlink.location)
 
 
-def add_symlink(symlink: Link) -> None:
+def add_symlink(symlink: Symlink) -> None:
     location = pathlib.Path(symlink.location)
     # check if the symlink exists already
     if location.is_symlink():
@@ -54,7 +54,7 @@ def add_symlink(symlink: Link) -> None:
         make_symlink(symlink)
 
 
-symlinks: Link = [Link(location="../fish", target="./fish")]
+symlinks: Symlink = [Symlink(location="../fish", target="./fish")]
 
 for symlink in symlinks:
     add_symlink(symlink)
