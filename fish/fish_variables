@@ -1,6 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR __fish_initialized:3100
+SETUVAR __fish_initialized:3400
 SETUVAR _fish_abbr_breathmint:ssh\x20zoe\x40192\x2e168\x2e178\x2e59
 SETUVAR _fish_abbr_tuna:ssh\x20zoe\x40192\x2e168\x2e178\x2e60
 SETUVAR _fish_abbr_wr_2D_cluster:ssh\x20oosting\x40cluster\x2ewr\x2einformatik\x2euni\x2dhamburg\x2ede
@@ -31,4 +31,5 @@ SETUVAR fish_pager_color_completion:\x1d
 SETUVAR fish_pager_color_description:B3A06D\x1eyellow
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR fish_user_paths:/home/bat/\x2ecargo/bin

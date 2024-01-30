@@ -19,7 +19,9 @@ class Symlink:
 
 
 def make_symlink(symlink: Symlink) -> None:
-    print(f"creating symlink from {symlink.real_location()} to {symlink.real_target()} ")
+    print(
+        f"creating symlink from {symlink.real_location()} to {symlink.real_target()} "
+    )
     os.symlink(symlink.real_target(), symlink.real_location())
 
 
@@ -54,7 +56,10 @@ def add_symlink(symlink: Symlink) -> None:
         make_symlink(symlink)
 
 
-symlinks: Symlink = [Symlink(location="../fish", target="./fish")]
+symlinks: list[Symlink] = [
+    Symlink(location="../fish", target="./fish"),
+    Symlink(location="../../.ssh/config", target="./ssh_config"),
+]
 
 for symlink in symlinks:
     add_symlink(symlink)
