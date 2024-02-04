@@ -1,7 +1,8 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_breathmint:ssh\x20zoe\x40192\x2e168\x2e178\x2e59
+SETUVAR _fish_abbr_serve:python3\x2e13\x20\x2dm\x20http\x2eserver\x208000
 SETUVAR _fish_abbr_tuna:ssh\x20zoe\x40192\x2e168\x2e178\x2e60
 SETUVAR _fish_abbr_wr_2D_cluster:ssh\x20oosting\x40cluster\x2ewr\x2einformatik\x2euni\x2dhamburg\x2ede
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
