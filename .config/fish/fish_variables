@@ -6,6 +6,10 @@ SETUVAR _fish_abbr_deck:ssh\x20deck\x40192\x2e168\x2e178\x2e85
 SETUVAR _fish_abbr_serve:python3\x2e13\x20\x2dm\x20http\x2eserver\x208000
 SETUVAR _fish_abbr_tuna:ssh\x20zoe\x40192\x2e168\x2e178\x2e60
 SETUVAR _fish_abbr_wr_2D_cluster:ssh\x20oosting\x40cluster\x2ewr\x2einformatik\x2euni\x2dhamburg\x2ede
+SETUVAR _fish_abbr_za:zoxide\x20add
+SETUVAR _fish_abbr_zq:zoxide\x20query
+SETUVAR _fish_abbr_zqi:zoxide\x20query\x20\x2di
+SETUVAR _fish_abbr_zr:zoxide\x20remove
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:005fd7
