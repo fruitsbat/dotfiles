@@ -7,6 +7,7 @@ SETUVAR _fish_abbr_cdq:zoxide\x20query
 SETUVAR _fish_abbr_cdqi:zoxide\x20query\x20\x2di
 SETUVAR _fish_abbr_cdr:zoxide\x20remove
 SETUVAR _fish_abbr_deck:ssh\x20deck\x40192\x2e168\x2e178\x2e85
+SETUVAR _fish_abbr_odroid:ssh\x20root\x40192\x2e168\x2e178\x2e46
 SETUVAR _fish_abbr_serve:python3\x20\x2dm\x20http\x2eserver\x208000
 SETUVAR _fish_abbr_tuna:ssh\x20zoe\x40192\x2e168\x2e178\x2e60
 SETUVAR _fish_abbr_wr_2D_cluster:ssh\x20oosting\x40cluster\x2ewr\x2einformatik\x2euni\x2dhamburg\x2ede
